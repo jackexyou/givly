@@ -1,0 +1,2 @@
+class Giving < ApplicationRecord
+end
