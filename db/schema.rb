@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180228203225) do
+ActiveRecord::Schema.define(version: 20180417003932) do
 
   create_table "givers", force: :cascade do |t|
     t.string "username"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20180228203225) do
     t.integer "giver_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "location"
+    t.boolean "seen", default: false
   end
 
   create_table "merchants", force: :cascade do |t|
